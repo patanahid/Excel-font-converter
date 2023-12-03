@@ -29,7 +29,6 @@ def convert_kruti_to_unicode(input_text):
     return output_text
   else:
       print(response.text)
-      if output
       
 @app.route('/')
 def index():
