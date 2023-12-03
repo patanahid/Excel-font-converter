@@ -2,6 +2,9 @@ from flask import Flask, render_template, request, send_file
 from openpyxl import load_workbook
 from openpyxl.styles import Font
 import os
+import requests
+import json
+
 
 app = Flask(__name__)
 def convert_kruti_to_unicode(input_text):
