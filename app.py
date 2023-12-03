@@ -79,4 +79,4 @@ def process_file():
     return send_file(output_filename, as_attachment=True, download_name="output.xlsx")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, host="0.0.0.0")
