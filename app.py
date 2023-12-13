@@ -39,7 +39,14 @@ def index():
 def process_file():
     # Assuming your HTML file input has the name 'file'
     uploaded_file = request.files['file']
-    os.makedirs("static")
+    try:
+      shutil.rmtree(os.path.join(os.getcwd(), "static"))
+    except:
+      print(f"cannot remove static first")
+    try:
+      os.makedirs("static")
+    except: 
+      print("Cannot make static folder")
     # Save the uploaded file
     uploaded_file.save("static/input.xlsx")
 
