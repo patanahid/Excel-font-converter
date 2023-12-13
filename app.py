@@ -9,7 +9,7 @@ import json
 app = Flask(__name__)
 def convert_kruti_to_unicode(input_text):
 
-  url = 'https://hindi-font-converter.vercel.app/api/unicode-krutidev'
+  url = 'https://hindi-font-converter-eight.vercel.app/api/unicode-krutidev'
   headers = {'Content-Type': 'application/json'}
   
   data = {
