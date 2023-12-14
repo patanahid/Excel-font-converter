@@ -64,15 +64,13 @@
                     $("#loading").removeClass('hidden');
                 }
                 $("#downloadStarted").addClass('hidden');
-            });
-        });
-            // Show "Download Started" when the download begins
-            $("#file-upload").change(function() {
                 setTimeout(function() {
                     $("#loading").addClass('hidden');
                     $("#downloadStarted").removeClass('hidden');
-                }, 6000);  // You may adjust the timeout based on your actual processing time
+                }, 6000);
             });
+        });
+        
 
 </script>
 </body>
